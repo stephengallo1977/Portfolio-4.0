@@ -1,0 +1,127 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul.mainNav li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul.iconNav {
+   position: absolute;
+   right: 0;
+   top: 5px;
+}
+nav.nav-center ul.mainNav li a,
+nav.nav-center ul.iconNav li a  {
+    display: inline-block;
+}
+.logoImg,
+.copyright {
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.github {
+    padding-top: 4px;
+}
+
+.parallaxText {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    text-shadow: 2px 2px 8px #969393;
+    font-family: 'Halant', serif;
+}
+h2, h4 {
+    font-family: 'Halant', serif;
+}
+#bio {
+    font-size: 14px;
+}
+.parallax-container {
+    height: 500px;
+}
+.portfolioRow {
+    padding-top: 30px;
+    
+}
+.skills {
+    font-size: 45px;
+    padding: 10px;
+}
+.d-flex {
+    display: inline-flex;
+  }
+.card{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+.cardLink {
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+}
+.lastRow {
+    padding-bottom: 30px;
+}
+.copyright {
+    font-size: 12px;
+}
+.card-image:hover{
+    cursor: pointer;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+main {
+    flex: 1 0 auto;
+}
+.hideDiv {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 980px) {
+    .d-flex{
+        display: block;
+    }
+    .card {
+        display: block;
+        width: 50%;
+        height: 100%;
+        margin-left: 25% !important;
+        margin-right: auto !important;
+        padding-bottom: 10px;
+    }
+    .cardLink {
+        position: relative;
+        
+    }
+    .line {
+        display: none;
+    }
+    .hideDiv {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        display: block;
+        width: 80%;
+        height: 100%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .logoImg {
+        height: 45px;
+    }
+}
